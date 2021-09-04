@@ -9,6 +9,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   imports: [
@@ -19,7 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent }
     ]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   declarations: [
     AppComponent,
