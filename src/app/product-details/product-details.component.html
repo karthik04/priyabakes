@@ -1,0 +1,8 @@
+<h3 *ngIf!="product">Product Details not available</h3>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency: '&#8377;' }}</h4>
+  <p>{{ product.description }}</p>
+  <button (click)="addToCart(product)">Buy</button>
+</div>
