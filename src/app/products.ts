@@ -4,6 +4,7 @@ export interface Product {
   price: number;
   description: string;
   typeCode: string;
+  imageUrl: string;
 }
 export interface ProductTypes {
   code: string;
@@ -25,28 +26,32 @@ export const products = [
     name: 'Royal Rasmalai',
     price: 799,
     description: 'Juicy cake with layers soaked with the Rasmalai',
-    typeCode: "cake"
+    typeCode: "cake",
+    imageUrl: "assets/img/logo-2.jpeg"
   },
   {
     id: 2,
     name: 'Black Forest',
     price: 699,
     description: 'Chocolate sponge cake with a rich cherry filling',
-    typeCode: "cake"
+    typeCode: "cake",
+    imageUrl: "assets/img/logo-2.jpeg"
   },
   {
     id: 3,
-    name: 'Choclate Overloaded',
+    name: 'Chocolate Overloaded',
     price: 299,
     description: '',
-    typeCode: "cake"
+    typeCode: "cake",
+    imageUrl: "assets/img/logo-2.jpeg"
   },
   {
     id: 4,
     name: 'Choclate cookies',
     price: 499,
     description: '',
-    typeCode: "desserts_snacks"
+    typeCode: "desserts_snacks",
+    imageUrl: "assets/img/logo-2.jpeg"
   }
 ];
 
