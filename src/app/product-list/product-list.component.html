@@ -1,20 +1,28 @@
-<h2>Cakes</h2>
 
-<div *ngFor="let product of products">
-  <h3>
-    <a
-      [title]="product.name + ' details'"
-      [routerLink]="['/products', product.id]"
-    >
-      {{ product.name }}
-    </a>
-  </h3>
-
-  <p *ngIf="product.description">
-    {{ product.description }}
-  </p>
-
-  <!-- <button (click)="share()">
-    Share
-  </button> -->
-</div>
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Cakes
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div *ngFor="let product of products">
+      <h3>
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]"
+        >
+          {{ product.name }}
+        </a>
+      </h3>
+    
+      <p *ngIf="product.description">
+        {{ product.description }}
+      </p>
+    
+      <!-- <button (click)="share()">
+        Share
+      </button> -->
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
