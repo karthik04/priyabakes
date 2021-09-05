@@ -14,6 +14,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatSnackBarModule,
     MatBadgeModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule
   ],
   declarations: [
     AppComponent,

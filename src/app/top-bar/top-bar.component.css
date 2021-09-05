@@ -5,3 +5,9 @@
   .transparent-background{
     background: #00000000;
   }
+
+  .main-logo{
+    height: 47px;
+    margin: 10px 0 0 -20px;
+    border-radius: 1px;
+  }
