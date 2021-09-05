@@ -1,28 +1,28 @@
-
 <mat-accordion>
-  <mat-expansion-panel hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Cakes
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div *ngFor="let product of products">
-      <h3>
-        <a
-          [title]="product.name + ' details'"
-          [routerLink]="['/products', product.id]"
-        >
-          {{ product.name }}
-        </a>
-      </h3>
-    
-      <p *ngIf="product.description">
-        {{ product.description }}
-      </p>
-    
-      <!-- <button (click)="share()">
-        Share
-      </button> -->
-    </div>
-  </mat-expansion-panel>
+  <div *ngFor="let productType of productTypes">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{productType.name}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div *ngFor="let product of products">
+        <div *ngIf="product.typeCode===productType.code">
+          <h3>
+            <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+              {{ product.name }}
+            </a>
+          </h3>
+
+          <p *ngIf="product.description">
+            {{ product.description }}
+          </p>
+
+          <!-- <button (click)="share()">
+                  Share
+                </button> -->
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </div>
 </mat-accordion>
