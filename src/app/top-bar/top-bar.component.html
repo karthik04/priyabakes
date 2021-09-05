@@ -1,14 +1,14 @@
-<mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+<mat-toolbar class="transparent-background">
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
-  </button>
+  </button> -->
   <a [routerLink]="['/']">
     <span>Priya bakes</span>
-    
+
     <!-- <img src="assets/img/logo-1.jpeg"> -->
   </a>
   <span class="example-spacer"></span>
   <button routerLink="/cart" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>shopping_cart</mat-icon>
+    <mat-icon [matBadge]="cs.items.length" [matBadgeHidden]="cs.items.length===0">shopping_cart</mat-icon>
   </button>
 </mat-toolbar>
