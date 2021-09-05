@@ -2,7 +2,9 @@
  .full-width-elm {
     width: 100%;
   }
-
+  app-top-bar{
+    background: #ffffff;
+  }
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
